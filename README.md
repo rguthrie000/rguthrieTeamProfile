@@ -1,4 +1,4 @@
-# rguthrieTeamProfile - rguthrie's Team Profile Summary - v1, 20200107
+# TeamInfo - rguthrie's Team Profile Summary - v1, 20200107
 
 User Story:
 AS A        manager
@@ -11,8 +11,9 @@ role information for an engineering team, then 'prints' the information as an
 HTML 5 webpage file.  <style> tags are used to provide CSS formatting in the 
 HTML file.
 
-The application was developed using Test-Driven Development (TDD) methodology;
-the full test suite was provided at the outset of code development.
+The application was partially developed using Test-Driven Development (TDD) 
+methodology; a class implementation test suite was provided at the outset of 
+code development.
 
 # Requirements
 
@@ -57,12 +58,12 @@ in no particular order:
   * Name
   * Role
   * ID
-  * Role-specific property (School, link to GitHub profile, or office number)
+  * Role-specific property (School, link to GitHub profile, or office phone number)
 
 # Design
  
 Package inquirer.js is used to implement command-line data capture. jest.js is the testing
-framework.
+framework.  Packages clear, chalk, and figlet were used for CLI presentation enhancement.
 
 # Getting Started
 
@@ -71,7 +72,8 @@ The node.js file is located at repo rguthrie000/rguthrieTeamProfile.
 
 ### Prerequisites
 
-Node.js is required to interpret/run this program, with external modules inquirer and jest.
+Node.js is required to interpret/run this program, with external modules inquirer, jest,
+clear, chalk, and figlet.
 
 ### Installing
 
