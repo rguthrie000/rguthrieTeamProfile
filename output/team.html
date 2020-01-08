@@ -1,79 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Team</title>
+    <title>Web Dev Team</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c502137733.js"></script>
+    <style>
+        body {
+            background-image: url('../assets/embossed-diamond.gif');
+            background-color: wheat;
+        }
+        .team-heading {
+            background-color: yellow;
+            border-radius: 100px;
+            margin: auto;
+            border: 4px solid black;
+            box-shadow: 4px 4px lightgray;
+        }
+        .employee-card {
+            width: 260px;
+            height: 400px;
+            margin: 10px 10px 10px 10px; 
+            border-radius: 10px;
+            border: 2px solid black;
+            box-shadow: 4px 4px lightgray;
+        }
+        .manager-card {
+            background-color: lightblue;
+        }
+        .engineer-card {
+            background-color: red;
+        }
+        .intern-card {
+            background-color: lightgreen;
+        }
+    </style>
 </head>
-
 <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 jumbotron mb-3 team-heading">
-                <h1 class="text-center">Womp Rats</h1>
+                <h1 class="text-center">Web Dev Team</h1>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
-                TeamInfo by rguthrie, copyright &copy 2020
+
+            <div class="card employee-card">
+                <div class="card-header manager-card">
+                    <h2 class="card-title">Fred Brooks</h2>
+                    <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>Manager</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">ID: 00001</li>
+                        <li class="list-group-item">Email: <a href="mailto:fbrooks@manmonth.com">fbrooks@manmonth.com</a></li>
+                        <li class="list-group-item">Phone: 800.888.8888</li>
+                    </ul>
+                </div>
             </div>
+
+            <div class="card employee-card">
+                <div class="card-header engineer-card">
+                    <h2 class="card-title">Dick Guthrie</h2>
+                    <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>Engineer</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">ID: 57855</li>
+                        <li class="list-group-item">Email: <a href="mailto:{{ email }}">rguthrie000@gmail.com</a></li>
+                        <li class="list-group-item">GitHub: <a href="https://github.com/rguthrie000" target="_blank" rel="noopener noreferrer">rguthrie000</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card employee-card">
+                <div class="card-header engineer-card">
+                    <h2 class="card-title">George Jetson</h2>
+                    <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>Engineer</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">ID: 10007</li>
+                        <li class="list-group-item">Email: <a href="mailto:{{ email }}">gjetson@spacely.com</a></li>
+                        <li class="list-group-item">GitHub: <a href="https://github.com/jetson99" target="_blank" rel="noopener noreferrer">jetson99</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card employee-card">
+                <div class="card-header intern-card">
+                    <h2 class="card-title">Tom Swift</h2>
+                    <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>Intern</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">ID: 88888</li>
+                        <li class="list-group-item">Email: <a href="mailto:swift@amazing.com">swift@amazing.com</a></li>
+                        <li class="list-group-item">School: UF</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card employee-card">
+                <div class="card-header intern-card">
+                    <h2 class="card-title">Elroy Jetson</h2>
+                    <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>Intern</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">ID: 99999</li>
+                        <li class="list-group-item">Email: <a href="mailto:elroy@jetsons.com">elroy@jetsons.com</a></li>
+                        <li class="list-group-item">School: UCF</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-    </div><div class="card employee-card">
-    <div class="card-header">
-        <h2 class="card-title">Dick Guthrie</h2>
-        <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>Manager</h3>
     </div>
-    <div class="card-body">
-        <ul class="list-group">
-            <li class="list-group-item">ID: 57855</li>
-            <li class="list-group-item">Email: <a href="mailto:rguthrie000@gmail.com">rguthrie000@gmail.com</a></li>
-            <li class="list-group-item">Phone: 321.331.5323</li>
-        </ul>
-    </div>
-</div><div class="card employee-card">
-    <div class="card-header">
-        <h2 class="card-title">George Jetson</h2>
-        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>Engineer</h3>
-    </div>
-    <div class="card-body">
-        <ul class="list-group">
-            <li class="list-group-item">ID: 10007</li>
-            <li class="list-group-item">Email: <a href="mailto:{{ email }}">gjetson@spacelysprockets.com</a></li>
-            <li class="list-group-item">GitHub: <a href="https://github.com/gJetson" target="_blank" rel="noopener noreferrer">gJetson</a></li>
-        </ul>
-    </div>
-</div><div class="card employee-card">
-    <div class="card-header">
-        <h2 class="card-title">Ada Lovelace</h2>
-        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>Engineer</h3>
-    </div>
-    <div class="card-body">
-        <ul class="list-group">
-            <li class="list-group-item">ID: 10000</li>
-            <li class="list-group-item">Email: <a href="mailto:{{ email }}">Ada@babbage.com</a></li>
-            <li class="list-group-item">GitHub: <a href="https://github.com/adaRocks" target="_blank" rel="noopener noreferrer">adaRocks</a></li>
-        </ul>
-    </div>
-</div><div class="card employee-card">
-    <div class="card-header">
-        <h2 class="card-title">Tom Swift</h2>
-        <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>Intern</h3>
-    </div>
-    <div class="card-body">
-        <ul class="list-group">
-            <li class="list-group-item">ID: 99999</li>
-            <li class="list-group-item">Email: <a href="mailto:tswift@swiftengineering.com">tswift@swiftengineering.com</a></li>
-            <li class="list-group-item">School: UF</li>
-        </ul>
-    </div>
-</div>
 </body>
 </html>
